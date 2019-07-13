@@ -1,0 +1,367 @@
+﻿<!doctype html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Vývoj mobilních aplikací pomocí frameworku Xamarin  | Brno | Windows User Group - Czech Republic</title>
+    <link rel="canonical" href="https://wug.cz/brno/akce/1159-Vyvoj-mobilnich-aplikaci-pomoci-frameworku-Xamarin">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+        body {
+            font-family: Trebuchet MS, Arial;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            border-bottom: #3063aa solid 2px;
+            grid-gap: .5em;
+        }
+
+        a {
+            color: #3063AA;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #358DC5;
+        }
+
+        .header__logo {
+        }
+
+        .header__menu-hot-item {
+            align-self: center;
+            font-size: 1.2em;
+        }
+
+        .button--icon {
+            background: none;
+            border: transparent;
+        }
+
+        .size-medium {
+            font-size: 2em;
+        }
+
+        .size-large {
+            font-size: 3em;
+        }
+
+        .menu-sidebar__header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        .event__title {
+            text-align: center;
+        }
+
+        .event__title__subtitle {
+            border-top: #3063aa solid 1px;
+            padding-top: 1em;
+            font-size: 1em;
+        }
+
+        .event__speaker {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            grid-column-gap: 1em;
+        }
+
+        .speaker__photo {
+            border-radius: 50%;
+            grid-row: 1/span 2;
+        }
+
+        .speaker_name, .speaker_titles {
+            margin: 0;
+            align-self: center;
+        }
+
+        .speaker_name {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .speaker_titles {
+            grid-row: 2;
+            grid-column: 2;
+            margin: 0;
+        }
+
+        .event__registration {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+        }
+
+        .registration-box {
+            display: grid;
+            grid-template-rows: 2fr 1fr 2fr;
+            color: var(--registration-box-color);
+            border: solid 2px var(--registration-box-color);
+        }
+
+        .registration-box--confirmed {
+            --registration-box-color: #3063AA;
+        }
+
+        .registration-box--wait-list {
+            --registration-box-color: #FFD22D;
+        }
+
+
+        .registration-box--rejected {
+            --registration-box-color: #D85C2D;
+        }
+
+        .registration-box__first-number {
+            font-size: 2em;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .registration-box__second-number {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .registration-box__label {
+            grid-row: 3;
+            background-color: var(--registration-box-color);
+            height: 2em;
+            color: white;
+            text-align: center;
+            padding: .25em;
+        }
+
+        .event__registration__registration-button {
+            grid-column: 1/-1;
+            font-size: 1.2em;
+            background: #358DC5;
+            border: #3063AA;
+            color: white;
+            padding: .25em;
+        }
+
+        .event__annotation {
+            font-weight: bold;
+        }
+
+        .event__annotation, .event__annotation-detail {
+            text-align: justify;
+        }
+
+        .event__location__title {
+            font-size: 1em;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "Vývoj mobilních aplikací pomocí frameworku Xamarin",
+        "startDate": "2019-07-18T17:00:00",
+        "endDate": "2019-07-18T20:00:00",
+        "location": {
+        "name": "Fakulta informatiky Masarykovy univerzity (A318)",
+        "@type": "Place",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Botanická 68a",
+        "addressLocality": "Brno",
+        "addressRegion": "Brno",
+        "addressCountry": "Czech Republic",
+        "postalCode": "60200"
+        }
+        },
+        "image": "https://corestart3.updatedays.cz/images/meta/meta-google.png",
+        "description": "Přijďte se podívat na to, jak se dají vyvíjet mobilní aplikace pomocí multiplatformního frameworku Xamarin. Jak vypadá vývoj aplikací pro Android nebo iOS v jazyce C#? Jak moc je možné kód sdílet a přenášet mezi platformami? A co je nového ve verzi Xamarin.Forms 4.0, která právě vyšla?",
+        "url": "https://wug.cz/brno/akce/1159-Vyvoj-mobilnich-aplikaci-pomoci-frameworku-Xamarin",
+        "performer": [
+        {
+        "@type": "Person",
+        "name": "Roman Jašek"
+        }
+        ]
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <amp-img class="header__logo" alt="logo" src="img/wug-logo-hd.png" width="118" height="43" layout="fixed"></amp-img>
+        <a class="header__menu-hot-item" href="">Další akce pobočky</a>
+        <button class="button--icon size-medium" on="tap:menu-sidebar.open">☰</button>
+    </header>
+
+    <section class="event__title">
+        <h1>Vývoj mobilních aplikací pomocí frameworku Xamarin</h1>
+        <h2 class="event__title__subtitle">Pobočka Brno</h2>
+    </section>
+
+    <section class="event__speaker">
+        <amp-img class="speaker__photo" src="img/roman.jfif" width="75" height="75"></amp-img>
+        <h2 class="speaker_name">Roman Jašek</h2>
+        <h3 class="speaker_titles">MVP</h3>
+    </section>
+
+    <section class="event__annotation">
+        Přijďte se podívat na to, jak se dají vyvíjet mobilní aplikace pomocí multiplatformního frameworku Xamarin. Jak vypadá vývoj aplikací pro Android nebo iOS v jazyce C#? Jak moc je možné kód sdílet a přenášet mezi platformami? A co je nového ve verzi Xamarin.Forms 4.0, která právě vyšla?
+    </section>
+
+
+    <section class="event__registration">
+        <div class="registration-box registration-box--confirmed">
+            <div class="registration-box__first-number">
+                35
+            </div>
+            <span class="registration-box__second-number">/85</span>
+            <div class="registration-box__label">
+                potvrzených registrací
+            </div>
+        </div>
+        <div class="registration-box registration-box--wait-list">
+            <div class="registration-box__first-number">
+                0
+            </div>
+            <div class="registration-box__label">
+                na čekací listině
+            </div>
+        </div>
+        <div class="registration-box registration-box--rejected">
+            <div class="registration-box__first-number">
+                0
+            </div>
+            <div class="registration-box__label">
+                zamítnutých registrací
+            </div>
+        </div>
+        <button class="event__registration__registration-button" on="tap:login-modal">Tam musím být!</button>
+    </section>
+
+    <section class="event__schedule">
+        17:00 - 17:10 - Představení WUGu<br />
+        17:10 - 18:30 - 1. část setkání <br />
+        18:30 - 18:45 - Přestávka a občerstvení <br />
+        18:45 - 20:00 - 2. část setkání <br />
+        20:00 - Diskuze <br />
+    </section>
+
+    <section class="event__annotation-detail">
+        Na akci nebude zajištěno občerstvení.
+    </section>
+    <section class="event__location">
+        <h2 class="event__location__title">
+            <a href="/prednaskove-prostory/44-Fakulta-informatiky-Masarykovy-univerzity">Fakulta informatiky Masarykovy univerzity (A318), Botanická 68a, Brno</a>
+        </h2>
+        <amp-iframe width="330" height="330" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" layout="responsive" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.505705766322!2d16.596788116427195!3d49.20993577932338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712946af848abab%3A0xcbdad60137e0b956!2sFakulta+informatiky+MU!5e0!3m2!1scs!2scz!4v1562838688374!5m2!1scs!2scz"></amp-iframe>
+    </section>
+
+    <amp-sidebar id="menu-sidebar" class="menu-sidebar" layout="nodisplay" side="right">
+
+        <div class="menu-sidebar__header">
+            <h2>Windows user group</h2>
+            <button class="button--icon size-medium" on="tap:menu-sidebar.close">╳</button>
+        </div>
+
+        <aside class="menu-sidebar__content">
+            Tady bude menu, seznam poboček a poslední přidaná videa
+        </aside>
+    </amp-sidebar>
+
+    <amp-lightbox id="login-modal" layout="nodisplay" animate-in="fly-in-bottom">
+        <div class="overlay" on="tap:login-modal.close" role="button" tabindex="0">
+            <h2>Přihlašovací dialog</h2>
+        </div>
+    </amp-lightbox>
+</body>
+</html>
