@@ -176,17 +176,20 @@
             margin: 0;
         }
 
-        .event__registration {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 1em;
+        .event__registration .registration-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
         }
 
         .registration-box {
             display: grid;
-            grid-template-rows: 2fr 1fr 2fr;
+            grid-template-rows: 10vw 5vw 10vw;
             color: var(--registration-box-color);
             border: solid 2px var(--registration-box-color);
+
+            width: 25vw;
+            font-size: 4vw;
         }
 
         .registration-box--confirmed {
@@ -216,19 +219,19 @@
         .registration-box__label {
             grid-row: 3;
             background-color: var(--registration-box-color);
-            height: 2em;
             color: white;
             text-align: center;
             padding: .25em;
         }
 
         .event__registration__registration-button {
-            grid-column: 1/-1;
+            width: 100%;
             font-size: 1.2em;
             background: #358DC5;
             border: #3063AA;
             color: white;
             padding: .25em;
+
         }
 
         .event__annotation {
@@ -321,31 +324,32 @@
 
 
     <section class="event__registration">
-        <div class="registration-box registration-box--confirmed">
-            <div class="registration-box__first-number">
-                35
+        <div class="registration-boxes">
+            <div class="registration-box registration-box--confirmed">
+                <div class="registration-box__first-number">
+                    35
+                </div>
+                <span class="registration-box__second-number">/85</span>
+                <div class="registration-box__label">
+                    potvrzených registrací
+                </div>
             </div>
-            <span class="registration-box__second-number">/85</span>
-            <div class="registration-box__label">
-                potvrzených registrací
+            <div class="registration-box registration-box--wait-list">
+                <div class="registration-box__first-number">
+                    0
+                </div>
+                <div class="registration-box__label">
+                    na čekací listině
+                </div>
             </div>
-        </div>
-        <div class="registration-box registration-box--wait-list">
-            <div class="registration-box__first-number">
-                0
-            </div>
-            <div class="registration-box__label">
-                na čekací listině
-            </div>
-        </div>
-        <div class="registration-box registration-box--rejected">
-            <div class="registration-box__first-number">
-                0
-            </div>
-            <div class="registration-box__label">
-                zamítnutých registrací
-            </div>
-        </div>
+            <div class="registration-box registration-box--rejected">
+                <div class="registration-box__first-number">
+                    0
+                </div>
+                <div class="registration-box__label">
+                    zamítnutých registrací
+                </div>
+            </div></div>
         <button class="event__registration__registration-button" on="tap:login-modal">Tam musím být!</button>
     </section>
 
